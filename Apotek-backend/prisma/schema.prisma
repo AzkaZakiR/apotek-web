@@ -10,24 +10,93 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model Obat{
   id    String @id
-  nama_obat String 
-  jenis_obat String
-  tanggal_expired String
+  nama_obat String? 
+  jenis_obat String?
+  tanggal_expired String?
   jumlah Int
-  harga_beli String
-  harga_jual String
-  stok_obat String
+  harga_beli String?
+  harga_jual String?
+  stok_obat String?
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
+  apoteker Apoteker @relation(fields: [id_apoteker], references: [id])
+  id_apoteker String
+  staff Staff_gudang @relation(fields: [id_staff], references: [id])
+  id_staff  String
+  supplier Supplier @relation(fields: [id_supplier], references: [id])
+  id_supplier String
+  pegawai Pegawai @relation(fields: [id_kasir], references: [id])
+  id_kasir String
+  pembelian Pembelian[]
 }
 
+model Apoteker{
+  id String @id
+  nama String?
+  alamat String?
+  no_telp Int
+  Obat Obat[]
+}
+model Staff_gudang{
+  id String @id
+  nama String?
+  alamat String?
+  no_telp Int
+  Obat Obat[]
+  Supplier Supplier[]
+}
+model Supplier{
+  id String @id
+  nama String?
+  alamat String?
+  no_telp Int?
+  Obat Obat[]
+  Staff Staff_gudang @relation(fields: [id_staff], references: [id])
+  id_staff String
+}
+model  Pegawai{
+  id String @id
+  nama String?
+  alamat String?
+  no_telp Int?
+  Obat Obat[]
+  laporan Laporan[]
+}
 model Pelanggan{
   id String @id
-  nama String
-  alamat String
-  no_telp String
+  nama String?
+  alamat String?
+  no_telp String?
+  pembelian Pembelian @relation(fields: [id_pembelian], references: [id])
+  id_pembelian String
 }
 
+model Pembelian{
+  id String @id
+  jumlah_jual Int?
+  total_harga String?
+  tanggal_beli DateTime?
+  jumlah_beli String?
+  obat Obat @relation(fields: [id_obat], references: [id])
+  id_obat String
+  pelanggan Pelanggan[]
+}
+
+model Laporan{
+  id String @id
+  isi_laporan String @db.LongText
+  tanggal_laporan String
+  pegawai Pegawai @relation(fields: [id_pegawai], references: [id])
+  id_pegawai String
+  pemilik Pemilik @relation(fields: [id_pemilik], references: [id])
+  id_pemilik Int
+}
+model Pemilik{
+  id Int  @id
+  Nama String
+  Alamat String
+  no_telp String
+  laporan Laporan[]
+}
