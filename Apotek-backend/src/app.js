@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import ObatRoutes from "./routes/ObatRoutes.js";
+
 dotenv.config();
 
 const app = express();
@@ -8,14 +10,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Headers", "x-access-token, Origin, Content-Type, Accept");
-  next();
-});
 
-const PORT = 4000;
-// app.get('/api', (req, res) => {
-//     res.send("Api is working");})
+const logRequest = (req, res, next) => {
+  console.log("terjadi request ke PATH", req.path);
+  next();
+};
+
+app.use(logRequest);
+app.use(ObatRoutes);
+
+const PORT = 5000;
+
+app.get("/api", (req, res) => {
+  res.send("Api is working");
+});
 
 const start = async () => {
   try {

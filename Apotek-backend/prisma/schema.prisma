@@ -13,90 +13,90 @@ datasource db {
 model Obat{
   id    String @id
   nama_obat String? 
+  gambar String?
   jenis_obat String?
+  tipe_obat String?
   tanggal_expired String?
-  jumlah Int
-  harga_beli String?
-  harga_jual String?
-  stok_obat String?
+  jumlah Int?
+  harga_beli Int
+  harga_jual Int
+  stok_obat Int?
+  kategori_obat String?
+  sub_kategori String?
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
-  apoteker Apoteker @relation(fields: [id_apoteker], references: [id])
-  id_apoteker String
   staff Staff_gudang @relation(fields: [id_staff], references: [id])
   id_staff  String
   supplier Supplier @relation(fields: [id_supplier], references: [id])
   id_supplier String
-  pegawai Pegawai @relation(fields: [id_kasir], references: [id])
-  id_kasir String
-  pembelian Pembelian[]
+
+  det_pembelian Det_pembelian[]
+}
+model Pembelian{
+  id String @id
+  jumlah_jual Int?
+  total_harga Int
+  tanggal_beli DateTime?
+  jumlah_beli String?
+  pelanggan Pelanggan @relation(fields: [id_pelanggan], references: [id])
+  id_pelanggan String
+  apoteker Apoteker @relation(fields: [id_apoteker], references: [id])
+  id_apoteker String
+  det_pembelian Det_pembelian[]
 }
 
-model Apoteker{
+model Det_pembelian{
   id String @id
-  nama String?
-  alamat String?
-  no_telp Int
-  Obat Obat[]
+
+  pembelian Pembelian @relation(fields: [id_faktur], references: [id])
+  id_faktur String
+  obat Obat @relation(fields: [id_obat], references: [id])
+  id_obat String
 }
 model Staff_gudang{
   id String @id
   nama String?
   alamat String?
-  no_telp Int
+  no_telp String?
   Obat Obat[]
-  Supplier Supplier[]
 }
 model Supplier{
   id String @id
   nama String?
   alamat String?
-  no_telp Int?
+  no_telp String?
   Obat Obat[]
-  Staff Staff_gudang @relation(fields: [id_staff], references: [id])
-  id_staff String
 }
-model  Pegawai{
+model  Apoteker{
   id String @id
   nama String?
   alamat String?
-  no_telp Int?
-  Obat Obat[]
+  no_telp String?
   laporan Laporan[]
+  pembelian Pembelian[] 
 }
 model Pelanggan{
   id String @id
   nama String?
   alamat String?
   no_telp String?
-  pembelian Pembelian @relation(fields: [id_pembelian], references: [id])
-  id_pembelian String
+  pembelian Pembelian[]
 }
 
-model Pembelian{
-  id String @id
-  jumlah_jual Int?
-  total_harga String?
-  tanggal_beli DateTime?
-  jumlah_beli String?
-  obat Obat @relation(fields: [id_obat], references: [id])
-  id_obat String
-  pelanggan Pelanggan[]
-}
 
 model Laporan{
   id String @id
   isi_laporan String @db.LongText
   tanggal_laporan String
-  pegawai Pegawai @relation(fields: [id_pegawai], references: [id])
-  id_pegawai String
+  apoteker Apoteker @relation(fields: [id_apoteker], references: [id])
+  id_apoteker String
   pemilik Pemilik @relation(fields: [id_pemilik], references: [id])
   id_pemilik Int
 }
 model Pemilik{
   id Int  @id
-  Nama String
-  Alamat String
-  no_telp String
+  Nama String?
+  Alamat String?
+  no_telp String?
   laporan Laporan[]
 }
