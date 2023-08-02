@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import ObatRoutes from "./routes/ObatRoutes.js";
+import PegawaiRoutes from "./routes/PegawaiRoutes.js";
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ const logRequest = (req, res, next) => {
 
 app.use(logRequest);
 app.use(ObatRoutes);
+app.use(PegawaiRoutes);
 
 const PORT = 5000;
 
@@ -34,3 +36,6 @@ const start = async () => {
 };
 
 start();
+
+// app.listen(PORT, console.log(`Server listening on port ${PORT}...`));
+// console.log("");

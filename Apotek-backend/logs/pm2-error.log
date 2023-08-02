@@ -1,0 +1,532 @@
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1751:16)
+    at listenInCluster (node:net:1799:12)
+    at Server.listen (node:net:1887:7)
+    at Function.listen (V:\University\Semester 4\RPL\Apotek\Apotek-backend\node_modules\express\lib\application.js:618:24)
+    at file:///V:/University/Semester%204/RPL/Apotek/Apotek-backend/src/app.js:38:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'uuid' imported from V:\University\Semester 4\RPL\Apotek\Apotek-backend\src\controller\ObatController.js
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:887:9)
+    at moduleResolve (node:internal/modules/esm/resolve:936:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1129:11)
+    at nextResolve (node:internal/modules/esm/loader:163:28)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:835:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:424:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:77:40)
+    at link (node:internal/modules/esm/module_job:76:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}

@@ -4,9 +4,9 @@ import { getAllObat, getObat, createObat, updateObat, deleteObat } from "../cont
 const router = express.Router();
 
 router.get("/obat", getAllObat);
-router.get("/obat/single", getObat);
+router.get("/obat/:id", getObat);
 router.post("/obat", createObat);
-router.patch("/obat", updateObat);
-router.delete("/obat", deleteObat);
+router.patch("/obat/:id", updateObat);
+router.delete("/obat/:id", deleteObat);
 
 export default router;
