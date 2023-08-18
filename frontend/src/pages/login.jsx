@@ -11,7 +11,7 @@ const Loginpage = (closeModal) => {
   console.log("Login page");
 
   return (
-    <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
+    <div className="fixed inset-0 flex justify-center items-center bg-orange-400 bg-opacity-50">
       <div className="modalContainer bg-white rounded-md shadow-lg p-9 h-auto w-2/5">
         <div className="titleCloseBtn flex justify-end">
           <button
@@ -29,8 +29,8 @@ const Loginpage = (closeModal) => {
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">Username</label>
           <input
-            className="shadow rounded-md appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            placeholder="Enter your username"
+            className="shadow rounded-md appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Enter "
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />

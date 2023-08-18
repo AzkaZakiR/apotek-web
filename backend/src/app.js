@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import ObatRoutes from "./routes/ObatRoutes.js";
 import PegawaiRoutes from "./routes/PegawaiRoutes.js";
+import UserRoutes from "./routes/UserRoutes.js";
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ const logRequest = (req, res, next) => {
 app.use(logRequest);
 app.use(ObatRoutes);
 app.use(PegawaiRoutes);
+app.use(UserRoutes);
 
 const PORT = 5000;
 

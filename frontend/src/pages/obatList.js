@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import useSWR, { useSWRConfig } from "swr";
+import { Button } from "flowbite-react";
+
 // import { deleteProduct } from '../../../backend/controllers/ProductsController';
 
 const Obatlist = () => {
@@ -28,6 +30,10 @@ const Obatlist = () => {
         <Link to="/add" className="bg-green-500 hover:bg-green-700 border-slate-200 text-white font-bold py-2 px-4 rounded-lg">
           Add New
         </Link>
+        <Link to="/add" className="bg-green-500 hover:bg-green-700 border-slate-200 text-white font-bold py-2 px-4 rounded-lg">
+          Add baru
+        </Link>
+        <Button color="success"> ini default</Button>
         <div className="relative shadow rounded-lg mt-3">
           <table className="w-full text-sm text-left text-gray-500">
             <thead className="text-xs text-gray-700 uppercase bg-gray-100">
@@ -44,7 +50,7 @@ const Obatlist = () => {
                 <tr className="bg-white border-b" key={product.id}>
                   <td className="py-3 px-1 text-center">{index + 1}</td>
                   <td className="py-3 px-6 font-medium text-gray-900">{product.nama_obat} </td>
-                  <td className="py-3 px-6">{product.harga_jual}</td>
+                  <td className="py-3 px-6">{product.stok_obat}</td>
                   <td className="py-3 px-6">
                     <img src={product.gambar} class="w-20" />{" "}
                   </td>

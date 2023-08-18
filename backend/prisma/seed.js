@@ -3,14 +3,17 @@ import { staffG } from "./staff_gudang.js";
 import { supplier } from "./supplier.js";
 import { apoteker } from "./apoteker.js";
 import { obat } from "./obat.js";
+import bcrypt from "bcrypt";
+
 const prisma = new PrismaClient();
 
 async function main() {
-  // for (let staff of staffG) {
-  //   await prisma.staff_gudang.create({
-  //     data: staff,
-  //   });
-  // }
+  // const hashPass = await bcrypt.hash('qwerty123', 10)
+  for (let staff of staffG) {
+    await prisma.staff_gudang.create({
+      data: staff,
+    });
+  }
   for (let suppli of supplier) {
     await prisma.supplier.create({
       data: suppli,
