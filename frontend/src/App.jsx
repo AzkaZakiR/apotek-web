@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 //import { Counter } from "./features/counter/Counter";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./components/shared/Layout";
-import Dashboard from "./pages/dashBoard";
-import Obatlist from "./pages/obatList";
-import Loginpage from "./pages/login";
-import Loginbaru from "./pages/newLogin";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/shared/Layout';
+import Dashboard from './pages/dashBoard';
+import Obatlist from './pages/obatList';
+import Loginpage from './pages/login';
+import Loginbaru from './pages/newLogin';
 
 export default function App() {
   return (
