@@ -45,7 +45,7 @@ export const obat = [
     id_staff: "staff-02",
     id_supplier: "supplier-02",
     tipe_obat: "tablet",
-    gambar: "https://example.com/obat-flu.jpg",
+    gambar: "https://img.antaranews.com/cache/1200x800/2013/05/20130520Obat-Flu-Burung-170513-2x.jpg.webp",
   },
   {
     id: "obat-04",
@@ -61,7 +61,7 @@ export const obat = [
     id_staff: "staff-03",
     id_supplier: "supplier-01",
     tipe_obat: "sirup",
-    gambar: "https://example.com/obat-batuk.jpg",
+    gambar: "https://d2qjkwm11akmwu.cloudfront.net/products/869854_23-8-2022_7-58-32-1665761450.webp",
   },
   {
     id: "obat-05",
@@ -77,7 +77,7 @@ export const obat = [
     id_staff: "staff-01",
     id_supplier: "supplier-02",
     tipe_obat: "tablet",
-    gambar: "https://example.com/vitamin-c.jpg",
+    gambar: "https://lifepack.id/wp-content/uploads/2020/12/88-300x300.jpg",
   },
   {
     id: "obat-06",
@@ -93,7 +93,7 @@ export const obat = [
     id_staff: "staff-01",
     id_supplier: "supplier-02",
     tipe_obat: "taplet",
-    gambar: "https://example.com/paracetamol.jpg",
+    gambar: "https://kliniksengkang.id/wp-content/uploads/2022/07/Paracetamol-Tab.jpg",
   },
   {
     id: "OB002",
@@ -109,6 +109,6 @@ export const obat = [
     id_staff: "ST002",
     id_supplier: "SUP002",
     tipe_obat: "Generik",
-    gambar: "amoxicillin.jpg",
+    gambar: "https://res-4.cloudinary.com/dk0z4ums3/image/upload/c_scale,h_500,w_500/v1/production/pharmacy/products/1669892837_amoxicilin",
   },
 ];
