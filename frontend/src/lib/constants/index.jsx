@@ -20,6 +20,12 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     icon: <HiOutlineShoppingCart />,
   },
   {
+    key: "Add obat",
+    label: "Add obat",
+    path: "/addObat",
+    icon: <HiOutlineShoppingCart />,
+  },
+  {
     key: "customers",
     label: "Customers",
     path: "/customers",

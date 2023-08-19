@@ -15,6 +15,7 @@ const AddObat = () => {
     try {
       const response = await axios.get("http://localhost:5000/supplier");
       setSuppliers(response.data);
+      //   console.log(suppliers);
     } catch (error) {
       console.error("Error fetching suppliers:", error);
     }
@@ -23,22 +24,29 @@ const AddObat = () => {
     event.preventDefault();
 
     try {
+      const token = localStorage.getItem("token"); // Get the token from local storage
+      const config = {
+        headers: {
+          "x-access-token": token, // Include the token in the request headers
+        },
+      };
       const formData = {
         nama_obat: event.target.nama_obat.value,
         gambar: event.target.gambar.value,
         jenis_obat: event.target.jenis_obat.value,
-        stok_obat: event.target.stok_obat.value,
-        tanggal_expired: tanggalExpired,
+        stok_obat: parseInt(event.target.stok_obat.value),
+        tanggal_exp: tanggalExpired,
         tipe_obat: event.target.tipe_obat.value,
-        gambar_obat: event.target.gambar_obat.value,
-        harga_beli: event.target.harga_beli.value,
-        harga_jual: event.target.harga_jual.value,
+        gambar_obat: event.target.gambar.value,
+        harga_beli: parseInt(event.target.harga_beli.value),
+        harga_jual: parseInt(event.target.harga_jual.value),
         id_supplier: selectedSupplier,
         sub_kategori: event.target.sub_kategori.value,
       };
 
-      const response = await axios.post("http://localhost:5000/obat", formData);
-      console.log("Data submitted:", response.data);
+      const response = await axios.post("http://localhost:5000/obat", formData, config);
+      console.log("Data submitted:");
+      console.log(response.data);
 
       // You can reset form fields or perform other actions after successful submission
     } catch (error) {
@@ -57,22 +65,8 @@ const AddObat = () => {
       <div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
         <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Tambah Obat</h3>
-          <button
-            type="button"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-toggle="defaultModal"
-          >
-            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
         </div>
-        <form action="#">
+        <form action="" onSubmit={handleSubmit}>
           <div class="grid gap-4 mb-4 sm:grid-cols-2">
             <div>
               <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -82,11 +76,15 @@ const AddObat = () => {
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Nama Obat...."
                 required=""
+                name="nama_obat"
               />
             </div>
             <div>
               <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jenis Obat</label>
-              <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+              <select
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                name="jenis_obat"
+              >
                 <option> Non-Resep</option>
                 <option> Resep</option>
               </select>
@@ -116,7 +114,7 @@ const AddObat = () => {
               <input
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Tipe Obat..."
-                required=""
+                name="tipe_obat"
               />
             </div>
             <div>
@@ -124,7 +122,6 @@ const AddObat = () => {
               <input
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Gambar Obat jika ada...."
-                required=""
                 name="gambar"
               />
             </div>
@@ -135,7 +132,6 @@ const AddObat = () => {
               <input
                 type="number"
                 name="harga_beli"
-                id="price"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Rp 100,000"
                 required=""
@@ -182,11 +178,8 @@ const AddObat = () => {
           </div>
           <button
             type="submit"
-            class="text-white inline-flex items-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            className="bg-green-500 hover:bg-green-700 border-slate-200 text-white font-bold py-2 px-4 rounded-lg hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300  text-sm  text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
           >
-            <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path>
-            </svg>
             Add new product
           </button>
         </form>
