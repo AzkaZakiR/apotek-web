@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 export const getAllObat = async (req, res) => {
   try {
     const obat = await prisma.obat.findMany();
-    res.status(200).json({ response: obat });
+    res.status(200).json(obat);
   } catch (err) {
     res.status(500).json({ msg: err.message });
     console.log(err);
@@ -30,7 +30,7 @@ export const getObat = async (req, res) => {
   }
 };
 export const createObat = async (req, res) => {
-  const { nama_obat, jenis_obat, tanggal_exp, jumlah, harga_beli, harga_jual, stok_obat, id_supplier, gambar, kategori_obat, sub_kategori, tipe_obat } = req.body;
+  const { medicines, id_pelanggan } = req.body;
   //const id_staff = req.id_staff;
   const checkObat = await prisma.obat.findFirst({
     where: { nama_obat: nama_obat },

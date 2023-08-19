@@ -12,6 +12,15 @@ export const getAllSupplier = async (req, res) => {
   }
 };
 
+export const getAllPelanggan = async (req, res) => {
+  try {
+    const supplier = await prisma.pelanggan.findMany();
+    res.status(200).json(supplier);
+  } catch (error) {
+    res.status(500).json({ msg: error.message });
+    console.log(error);
+  }
+};
 export const getSupplier = async (req, res) => {
   try {
     const idSupplier = req.params.id;

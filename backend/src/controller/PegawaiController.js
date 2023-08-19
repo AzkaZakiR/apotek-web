@@ -67,41 +67,49 @@ const generateIdWithDate = () => {
   return idPembelian;
 };
 export const createPembelian = async (req, res) => {
-  const { nama_obat, jenis_obat, tanggal_exp, jumlah, harga_beli, harga_jual, stok_obat, id_supplier, gambar, kategori_obat, sub_kategori, tipe_obat } = req.body;
-  //const id_staff = req.id_staff;
-  // const checkObat = await prisma.obat.findFirst({
-  //   where: { nama_obat: nama_obat },
-  // });
-  // if (checkObat) { return res.status(400).json({ msg: "Obat sudah ada" }); }
+  const currentDate = new Date();
+  const { medicines, id_pelanggan } = req.body;
   const idPembelian = generateIdWithDate();
-
+  console.log("OBat: ");
+  console.log(medicines);
+  //const idDetailPembelian = `detpem-${uuidv4()}`;
+  let nomor_tambah = 1;
   const staff_id = req.userId;
   console.log("Id staff: " + staff_id);
-
+  const total_amount = medicines.reduce((total, product) => total + product.jumlah_beli, 0);
+  console.log("Total amount: " + total_amount);
+  const total_harga = medicines.reduce((total, product) => total + product.harga_obat, 0);
+  console.log("Total harga: " + total_harga);
+  //const id = medicines.nama_obat
   try {
-    const obat = await prisma.obat.create({
+    const pembelian_obat = await prisma.pembelian.create({
       data: {
-        id: obatId,
-        nama_obat: nama_obat,
-        jenis_obat: jenis_obat,
-        tanggal_expired: tanggal_exp,
-        jumlah: jumlah,
-        harga_beli: harga_beli,
-        harga_jual: harga_jual,
-        stok_obat: stok_obat,
-        staff: {
-          connect: { id: staff_id },
-        },
-        supplier: {
-          connect: { id: id_supplier },
-        },
-        gambar: gambar,
-        kategori_obat: kategori_obat,
-        sub_kategori: sub_kategori,
-        tipe_obat: tipe_obat,
+        id: idPembelian,
+        jumlah_beli: total_amount,
+        total_harga: total_harga,
+        tanggal_beli: currentDate,
+        id_pelanggan: "pelanggan-01",
+        id_apoteker: staff_id,
       },
     });
-    res.status(201).json(obat);
+    const id_pembelian = pembelian_obat.id;
+    medicines.forEach((detail) => {
+      detail.id_faktur = id_pembelian;
+      detail.id_detpembelian = `detpem-${uuidv4()}-${nomor_tambah}`;
+      nomor_tambah++;
+    });
+    console.log("Id pembelian medicinesL");
+    console.log(medicines);
+    const det_obat = await prisma.det_pembelian.createMany({
+      data: medicines,
+      //     nama_obat: id,
+      //     harga_obat: harga_obat,
+      //     jumlah_beli: jumlah_beli,
+    });
+    res.status(201).json({
+      "Pembelian Obat: ": pembelian_obat,
+      "Detail pembelian": det_obat.data,
+    });
   } catch (error) {
     res.status(400).json({ message: error });
     console.log(error);

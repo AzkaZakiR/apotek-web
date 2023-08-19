@@ -3,6 +3,7 @@ import { staffG } from "./staff_gudang.js";
 import { supplier } from "./supplier.js";
 import { apoteker } from "./apoteker.js";
 import { obat } from "./obat.js";
+import { pelanggan } from "./pelanggan.js";
 import bcrypt from "bcrypt";
 
 const prisma = new PrismaClient();
@@ -22,6 +23,11 @@ async function main() {
   // for (let apotek of apoteker) {
   //   await prisma.apoteker.create({
   //     data: apotek,
+  //   });
+  // }
+  // for (let customer of pelanggan) {
+  //   await prisma.pelanggan.create({
+  //     data: customer,
   //   });
   // }
   for (let medicine of obat)
