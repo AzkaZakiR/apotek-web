@@ -30,9 +30,17 @@ export const getObat = async (req, res) => {
   }
 };
 export const createObat = async (req, res) => {
-  const { nama_obat, jenis_obat, tanggal_exp, jumlah, harga_beli, harga_jual, stok_obat, id_staff, id_supplier, gambar, kategori_obat, sub_kategori, tipe_obat } = req.body;
+  const { nama_obat, jenis_obat, tanggal_exp, jumlah, harga_beli, harga_jual, stok_obat, id_supplier, gambar, kategori_obat, sub_kategori, tipe_obat } = req.body;
   //const id_staff = req.id_staff;
+  const checkObat = await prisma.obat.findFirst({
+    where: { nama_obat: nama_obat },
+  });
+  if (checkObat) {
+    return res.status(400).json({ msg: "Obat sudah ada" });
+  }
   const obatId = `obat-${uuidv4()}`;
+  const staff_id = req.userId;
+  console.log("Id staff: " + staff_id);
 
   try {
     const obat = await prisma.obat.create({
@@ -45,8 +53,12 @@ export const createObat = async (req, res) => {
         harga_beli: harga_beli,
         harga_jual: harga_jual,
         stok_obat: stok_obat,
-        id_staff: id_staff,
-        id_supplier: id_supplier,
+        staff: {
+          connect: { id: staff_id },
+        },
+        supplier: {
+          connect: { id: id_supplier },
+        },
         gambar: gambar,
         kategori_obat: kategori_obat,
         sub_kategori: sub_kategori,

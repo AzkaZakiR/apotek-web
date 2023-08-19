@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import ObatRoutes from "./routes/ObatRoutes.js";
 import PegawaiRoutes from "./routes/PegawaiRoutes.js";
 import UserRoutes from "./routes/UserRoutes.js";
+import SupplierRoutes from "./routes/SupplierRoutes.js";
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ app.use(logRequest);
 app.use(ObatRoutes);
 app.use(PegawaiRoutes);
 app.use(UserRoutes);
+app.use(SupplierRoutes);
 
 const PORT = 5000;
 
