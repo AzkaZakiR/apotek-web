@@ -8,9 +8,9 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     icon: <HiOutlineViewGrid />,
   },
   {
-    key: "products",
-    label: "Products",
-    path: "/products",
+    key: "obat",
+    label: "obat",
+    path: "/obat",
     icon: <HiOutlineCube />,
   },
   {

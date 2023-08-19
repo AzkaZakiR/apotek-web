@@ -1,24 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import useSWR, { useSWRConfig } from "swr";
-import { Button } from "flowbite-react";
 
 // import { deleteProduct } from '../../../backend/controllers/ProductsController';
 
 const Obatlist = () => {
+  const [obat, setObat] = useState([]);
+
   const { mutate } = useSWRConfig();
   const fetcher = async () => {
     const response = await axios.get("http://localhost:5000/obat");
-    return response.data.response;
+    console.log("Response:");
+    console.log(response);
+    return response.data; // Return the data property of the response
   };
+  // useEffect(() => {
+  //   fetchObats();
+  // }, []);
+
+  // const fetchObats = async () => {
+  //   try {
+  //     const response = await axios.get("http://localhost:5000/obat");
+  //     setObat(response.data);
+  //   } catch (error) {
+  //     console.error("Error fetch ing suppliers:", error);
+  //   }
+  // };
 
   //   const deleteProduct = async (productId) => {
   //     await axios.delete(`http://localhost:5000/products/${productId}`);
   //     mutate("products");
   //   };
   // check = typeof()
-  const { data } = useSWR("products", fetcher);
+  const { data } = useSWR("obats", fetcher);
   console.log("Type data: ");
   console.log(typeof data);
   console.log(data);
@@ -58,9 +73,7 @@ const Obatlist = () => {
                     <Link to={`/edit/${product.id}`} className="font-medium bg-blue-400 hover:bg-blue-500 px-3 py-1 rounded text-white mr-1">
                       Edit
                     </Link>
-                    {/* <button onClick={() => deleteProduct(product.id)} className="font-medium bg-red-400 hover:bg-red-500 px-3 py-1 rounded text-white">
-                      Delete{" "}
-                    </button> */}
+                    <button className="font-medium bg-red-400 hover:bg-red-500 px-3 py-1 rounded text-white">Delete </button>
                   </td>
                 </tr>
               ))}

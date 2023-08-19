@@ -6,7 +6,7 @@ const AddObat = () => {
   const [suppliers, setSuppliers] = useState([]);
   const [selectedSupplier, setSelectedSupplier] = useState("");
   const [tanggalExpired, setTanggalExpired] = useState("");
-
+  const [error, setError] = useState("");
   useEffect(() => {
     fetchSuppliers();
   }, []);
@@ -43,14 +43,25 @@ const AddObat = () => {
         id_supplier: selectedSupplier,
         sub_kategori: event.target.sub_kategori.value,
       };
-
       const response = await axios.post("http://localhost:5000/obat", formData, config);
       console.log("Data submitted:");
       console.log(response.data);
 
       // You can reset form fields or perform other actions after successful submission
     } catch (error) {
-      console.error("Error submitting data:", error);
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        const errorMessage = error.response.data.msg;
+        setError(errorMessage);
+        setTimeout(() => {
+          setError("");
+        }, 2000);
+        setTimeout(() => {
+          setError("");
+        }, 2000);
+      } else {
+        console.error("Error submitting data:", error);
+      }
     }
   };
 
@@ -78,6 +89,7 @@ const AddObat = () => {
                 required=""
                 name="nama_obat"
               />
+              {error && !error.includes("Wrong Password") && <p className="text-red-500 mt-1">{error}</p>}
             </div>
             <div>
               <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jenis Obat</label>

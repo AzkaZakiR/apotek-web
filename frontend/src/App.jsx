@@ -7,6 +7,7 @@ import Obatlist from "./pages/obatList";
 import AddObat from "./pages/addObat";
 import Loginpage from "./pages/login";
 import Loginbaru from "./pages/newLogin";
+import Transaction from "./pages/Transactions";
 
 export default function App() {
   return (
@@ -21,8 +22,11 @@ export default function App() {
     // </div>
     <Router>
       <Routes>
+        <Route index path="/masuk" element={<Loginbaru />} />
         <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
+          <Route element={<Dashboard />} />
+          <Route path="transactions" element={<Transaction />} />
+          <Route path="obat" element={<Obatlist />} />
           {/* <Route path="products" element={<Products />} /> */}
           {/* <Route path="products" element={<ProductList />} /> */}
           {/* <Route path="add" element={<AddProduct />} /> */}
@@ -30,8 +34,8 @@ export default function App() {
           <Route path="addObat" element={<AddObat />} />
         </Route>
         {/* <Route path="/register" element={<Register />} /> */}
-        <Route path="/masuk" element={<Loginbaru />} />
         <Route path="/tambah" element={<AddObat />} />
+        <Route path="/obat" element={<Obatlist />} />
       </Routes>
     </Router>
   );
