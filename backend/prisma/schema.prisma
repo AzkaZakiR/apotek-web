@@ -48,6 +48,8 @@ model Pembelian{
 model Det_pembelian{
   id String @id
 
+  jumlah_beli Int?
+  harga_obat Int?
   pembelian Pembelian @relation(fields: [id_faktur], references: [id])
   id_faktur String
   obat Obat @relation(fields: [id_obat], references: [id])
