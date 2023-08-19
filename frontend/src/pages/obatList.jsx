@@ -27,9 +27,15 @@ const Obatlist = () => {
   return (
     <div className="flex flex-col mt-5">
       <div className="w-full">
-        <Link to="/add" className="bg-green-500 hover:bg-green-700 border-slate-200 text-white font-bold py-2 px-4 rounded-lg">Tambah Obat</Link>
+        <div className="w-full text-right">
+          {" "}
+          {/* Add text-right class here */}
+          <Link to="/addObat" className="bg-green-500 hover:bg-green-700 border-slate-200 text-white font-bold py-2 px-4 rounded-lg">
+            Add New
+          </Link>
+        </div>
         <div className="relative shadow rounded-lg mt-3">
-          <table className="w-full text-sm text-left text-gray-500">
+          <table className="w-full text-sm text-left sss`text-gray-500">
             <thead className="text-xs text-gray-700 uppercase bg-gray-100">
               <tr>
                 <th className="py-3 px-1 text-center">No</th>

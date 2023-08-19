@@ -1,4 +1,4 @@
-import jwt, { verify } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import secretKey from "./config.js";
 
 //const secretKey = "azka-secret-key"
