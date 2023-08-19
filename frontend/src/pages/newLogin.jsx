@@ -68,7 +68,7 @@ const Loginbaru = (closeModal) => {
           <div className="m-6 ">
             <label className="text-left block text-gray-700 text-sm font-bold mb-2">Username</label>
             <input
-              className="shadow rounded-md appearance-none border w-full h-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow rounded-md appearance-none border w-full h-10 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               placeholder="Enter your username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -80,7 +80,7 @@ const Loginbaru = (closeModal) => {
               Password
             </label>
             <input
-              className="shadow rounded-md appearance-none border w-full h-20 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow rounded-md appearance-none border w-full h-10 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="password"
               placeholder="Enter your password"
               value={password}
@@ -103,13 +103,6 @@ const Loginbaru = (closeModal) => {
         <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
           <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded-lg bg-pink-600">
             <img src="./Img/image 4.png" class="w-full align-middle rounded-t-lg" />
-            <blockquote class="relative p-8 mb-4">
-              <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block">
-                <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
-              </svg>
-              <h4 class="text-xl font-bold text-white">Top Notch Services</h4>
-              <p class="text-md font-light mt-2 text-white">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens.</p>
-            </blockquote>
           </div>
         </div>
       </div>
